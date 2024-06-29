@@ -1,0 +1,38 @@
+[handleMsg]:  {
+  key: {
+    remoteJid: '5491138929372@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB04B4588F2AC4F19B615',
+    participant: undefined
+  },
+  messageTimestamp: 1719617154,
+  pushName: 'Juampa;',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: 'hola',
+      contextInfo: [ContextInfo],
+      inviteLinkGroupTypeV2: 0
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'hola',
+  from: '5491138929372'
+}
+[ERROR ID (ans_05885ac0-44e4-473f-97e2-2bc8e2b62511)]:  TypeError: Invalid URL
+    at new URL (node:internal/url:797:36)
+    at handleDownload (C:\Users\MaxiDev\Desktop\BotPeluqueriaSandra\base-baileys-json\node_modules\@bot-whatsapp\provider\lib\baileys\index.cjs:136:35)
+    at generalDownload$1 (C:\Users\MaxiDev\Desktop\BotPeluqueriaSandra\base-baileys-json\node_modules\@bot-whatsapp\provider\lib\baileys\index.cjs:182:32)
+    at BaileysProvider.sendMedia (C:\Users\MaxiDev\Desktop\BotPeluqueriaSandra\base-baileys-json\node_modules\@bot-whatsapp\provider\lib\baileys\index.cjs:580:38)
+    at BaileysProvider.sendMessage (C:\Users\MaxiDev\Desktop\BotPeluqueriaSandra\base-baileys-json\node_modules\@bot-whatsapp\provider\lib\baileys\index.cjs:735:41)
+    at CoreClass.sendProviderAndSave (C:\Users\MaxiDev\Desktop\BotPeluqueriaSandra\base-baileys-json\node_modules\@bot-whatsapp\bot\lib\bundle.bot.cjs:1561:46)
+    at Object.promiseInFunc (C:\Users\MaxiDev\Desktop\BotPeluqueriaSandra\base-baileys-json\node_modules\@bot-whatsapp\bot\lib\bundle.bot.cjs:1238:36)
+    at C:\Users\MaxiDev\Desktop\BotPeluqueriaSandra\base-baileys-json\node_modules\@bot-whatsapp\bot\lib\bundle.bot.cjs:531:38
+    at Array.map (<anonymous>)
+    at Queue.processQueue (C:\Users\MaxiDev\Desktop\BotPeluqueriaSandra\base-baileys-json\node_modules\@bot-whatsapp\bot\lib\bundle.bot.cjs:526:45) {
+  code: 'ERR_INVALID_URL',
+  input: '../assets/sandraPB.jpeg'
+}
